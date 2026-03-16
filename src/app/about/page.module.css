@@ -1,0 +1,260 @@
+.page {
+  padding-bottom: 0;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.heroAccent {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroDescription {
+  font-size: 1.05rem;
+  color: var(--text-tertiary);
+  line-height: 1.7;
+}
+
+/* Mission */
+.missionSection {
+  background: var(--bg-secondary);
+}
+
+.missionCard {
+  padding-right: 40px;
+}
+
+.missionTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.missionText {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.valueCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all var(--transition-base);
+}
+
+.valueCard:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.valueIcon {
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+}
+
+.valueTitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.valueDescription {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+}
+
+/* RAG section */
+.ragSection {
+  background: var(--bg-primary);
+}
+
+.ragSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ragStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.ragStep:hover {
+  border-color: var(--border-color-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.ragStepNum {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.ragStepTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.ragStepDescription {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+}
+
+/* FAQ */
+.faqSection {
+  background: var(--bg-secondary);
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faqItem {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faqItem.faqOpen {
+  border-color: var(--accent-primary);
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+  transition: color var(--transition-fast);
+}
+
+.faqQuestion:hover {
+  color: var(--accent-primary);
+}
+
+.faqChevron {
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+  color: var(--text-muted);
+}
+
+.faqOpen .faqChevron {
+  transform: rotate(180deg);
+  color: var(--accent-primary);
+}
+
+.faqAnswer {
+  overflow: hidden;
+}
+
+.faqAnswer p {
+  padding: 0 24px 18px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* CTA */
+.ctaSection {
+  padding: 80px 0 100px;
+  background: var(--bg-primary);
+}
+
+.ctaBanner {
+  text-align: center;
+  padding: 72px 40px;
+  background: var(--gradient-hero);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+}
+
+.ctaTitle {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.ctaDescription {
+  font-size: 0.95rem;
+  color: #a3a3a3;
+  max-width: 440px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .missionCard {
+    padding-right: 0;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  .ragStep {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .ctaBanner {
+    padding: 48px 24px;
+  }
+}
