@@ -20,13 +20,13 @@ export default function Footer() {
               rights, verified by real legal sources.
             </p>
             <div className={styles.socials}>
-              <a href="#" aria-label="GitHub" className={styles.socialLink}>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={styles.socialLink}>
                 <FiGithub size={18} />
               </a>
-              <a href="#" aria-label="Twitter" className={styles.socialLink}>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={styles.socialLink}>
                 <FiTwitter size={18} />
               </a>
-              <a href="#" aria-label="Email" className={styles.socialLink}>
+              <a href="mailto:contact@knowyourrights.com" aria-label="Email" className={styles.socialLink}>
                 <FiMail size={18} />
               </a>
             </div>
